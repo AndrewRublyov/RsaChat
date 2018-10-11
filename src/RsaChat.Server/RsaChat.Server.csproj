@@ -1,0 +1,91 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <AssemblyName>RsaChat.Server</AssemblyName>
+        <RootNamespace>RsaChat.Server</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.3" />
+        <PackageReference Include="Microsoft.AspNetCore.SignalR">
+          <Version>1.0.4</Version>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\js\cryptico.browser.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\cryptico.browser.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\encryptEngines\encryptEngines.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\encryptEngines\io.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\encryptEngines\js.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\encryptEngines\node12.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\formats\components.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\formats\formats.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\formats\pkcs1.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\formats\pkcs8.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\libs\jsbn.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\libs\rsa.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\NodeRSA.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\schemes\oaep.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\schemes\pkcs1.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\schemes\pss.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\schemes\schemes.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\node-rsa\utils.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\aes_cbc.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\aes_core.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\aes_ctr.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\asn1.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\aes_cbc_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\aes_core_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\aes_ctr_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\asn1_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\compress_all.sh" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\jsbn_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\md5_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\pidcrypt_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\pidcrypt_util_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\prng4_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\rng_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\rsa_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\seedrandom.min.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\sha1_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\sha256_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\sha512_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\compressed\string_extend_c.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\gpl-3.0.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\history.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\jsbn.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\md5.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\oids.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\original scripts\asn1.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\original scripts\jsbn.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\original scripts\md5.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\original scripts\prng4.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\original scripts\rng.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\original scripts\rsa.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\original scripts\seedrandom.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\original scripts\sha1.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\original scripts\sha256.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\original scripts\sha512.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\pidcrypt.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\pidcrypt_util.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\prng4.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\rng.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\rsa.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\seedrandom.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\sha1.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\sha256.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\sha512.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\string_extend.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\test\test_aes-cbc.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\test\test_aes-ctr.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\pidcrypt\test\test_hashes.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\signalr.min.js" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\RsaChat.Encryption\RsaChat.Encryption.csproj" />
+    </ItemGroup>
+
+</Project>

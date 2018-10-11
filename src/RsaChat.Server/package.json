@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "name": "signalrapp",
+  "private": true,
+  "dependencies": {
+    "@aspnet/signalr": "*",
+    "node-rsa": "^1.0.1"
+  }
+}
