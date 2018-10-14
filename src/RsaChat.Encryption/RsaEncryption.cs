@@ -32,6 +32,9 @@ namespace RsaChat
 
         response.PublicKey = publicKeyWithSize;
         response.PrivateKey = privateKeyWithSize;
+        
+        provider.PersistKeyInCsp = false;
+        provider.Clear();
       }
 
       return response;
